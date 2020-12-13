@@ -1,0 +1,24 @@
+int function min(int x, int y)
+[
+   new int res;
+   return res;
+]
+devoid function stand (string a, string b)
+[
+   new int j = abs(a);
+   print j;
+   return pow(j, b);
+]
+head
+[
+   new int x = 9;
+   new int y = -9;
+   new string strx = 'just';
+   new string stry = 'string';
+   new int t;
+   t = min (x,y);
+   print t;
+   new int ab = 3;
+   print ab;
+   stand(strx,stry);
+]
