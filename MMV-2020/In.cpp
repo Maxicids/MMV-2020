@@ -26,7 +26,7 @@ namespace In
 			in.size++;
 			position++;
 			if (in.code[(int)letter] == in.F) {
-				throw ERROR_THROW_IN(200, in.lines, position);
+				throw ERROR_THROW_IN(104, in.lines, position);
 			}
 			else if (in.code[(int)letter] == in.T) {
 				in.text[i] = letter;
