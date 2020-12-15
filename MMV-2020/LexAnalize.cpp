@@ -379,11 +379,11 @@ namespace LexAnalysis
 					entryIT.idtype = IT::V;//var
 					_mbscpy(entryIT.visibility, prefix);
 					if (entryIT.iddatatype == IT::INT || entryIT.iddatatype == IT::BOOL)
-						entryIT.value.vint = TI_INT_DEFAULT;
+						entryIT.value.vint = INT_DEFAULT;
 					if (entryIT.iddatatype == IT::STR)
 					{
 						entryIT.value.vstr.len = 0;
-						memset(entryIT.value.vstr.str, TI_STR_DEFAULT, sizeof(char));
+						memset(entryIT.value.vstr.str, STR_DEFAULT, sizeof(char));
 					}
 
 					if (lextable.table[lextable.size - 3].lexema != LEX_VAR)

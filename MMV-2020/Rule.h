@@ -65,7 +65,7 @@ namespace GRB
 			Rule::Chain(11, TS('c'), TS('['), NS('R'), TS(']'), TS('{'), NS('X'), TS('}'), TS('u'), TS('{'), NS('X'), TS('}')),
 			Rule::Chain(3, TS('P'), NS('K'), TS('.')),
 			Rule::Chain(3, TS('S'), NS('K'), TS('.')),
-			Rule::Chain(3, TS('o'), NS('K'), TS('.')),
+			Rule::Chain(5, TS('o'), TS('['), NS('I'), TS(']'), TS('.')),//
 			Rule::Chain(2, TS('n'), TS('.')),
 			Rule::Chain(3, TS('i'), NS('K'), TS('.'))
 		),

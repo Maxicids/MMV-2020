@@ -5,8 +5,8 @@
 
 #define ID_MAXSIZE		15																	// максимальное количество символов в идентификаторе													// максимальное число символов в идентификаторе + область видимости
 #define TI_MAXSIZE		4096																// максимальное количество строк в таблице идентификаторов
-#define TI_INT_DEFAULT	0x00000000															// значение по умолчанию для типа integer
-#define TI_STR_DEFAULT	0x00																// значение по умолчанию для типа string
+#define INT_DEFAULT 0x00000000															// значение по умолчанию для типа integer
+#define STR_DEFAULT	0x00																// значение по умолчанию для типа string
 #define TI_NULLIDX		0xffffffff															// нет элемента таблицы идентификаторов
 #define TI_STR_MAXSIZE	255																	// максимальная длина строки													
 #define MAX_PARAMS_COUNT 2

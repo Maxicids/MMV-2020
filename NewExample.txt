@@ -1,24 +1,55 @@
-int function min(int x, int y)
-[
-   new int res;
-   return res;
-]
-devoid function stand (string a, string b)
-[
-   new int j = abs(a);
-   print j;
-   return pow(j, b);
-]
+function int math [int one & int two]
+{
+        var int result.
+        result = (one + Pow[one & two ]) % two .
+        return[result].
+}
+function str concat[str a & str b]
+{
+        var str result = a + b.
+        return[result].
+}
+function int ten[]
+{
+        return[10].
+}
+
 head
-[
-   new int x = 9;
-   new int y = -9;
-   new string strx = 'just';
-   new string stry = 'string';
-   new int t;
-   t = min (x,y);
-   print t;
-   new int ab = 3;
-   print ab;
-   stand(strx,stry);
-]
+{
+        var int l = byte100.
+        output [l]. 
+
+        var int num = 010.
+        output [num]. 
+
+        var bool bl = true.
+        output [bl]. 
+        
+        var int fdfshhvhbhj.
+        var int c= ten[].
+        output [c]. 
+
+        var int s=octal4.
+        output [s]. 
+
+        var int f = math[l & s].
+        output[f].
+
+	var str stra = "just ".
+        var str strb = "string".
+        var str strc = concat[stra & strb]. 
+        output [strc]. 
+
+	var int x = hex24.
+	var int rc = MaxNum[x & s].
+        output [rc]. 
+
+	check [rc > f]
+	{
+                output[x].
+	}
+	otherwise
+	{
+		output[strc].
+	}
+}

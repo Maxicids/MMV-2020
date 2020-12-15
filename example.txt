@@ -1,57 +1,12 @@
-function int math [int one & int two]
-{
-        var int result.
-        result = (one + Pow[one & two ]) % two .
-        return[result].
-}
-
 function str concat[str a & str b]
 {
         var str result = a + b.
         return[result].
 }
-
-function int ten[]
-{
-        return[10].
-}
-
 head
 {
-        var int l = byte100.
-        output [l]. 
-
-        var int num = 010.
-        output [num]. 
-
-        var bool bl = true.
-        output [bl]. 
-        
-        var int fdfshhvhbhj.
-        var int c= ten[].
-        output [c]. 
-
-        var int s=octal4.
-        output [s]. 
-
-        var int f = math[l & s].
-        output[f].
-
 	var str stra = "just ".
-        var str strb = "string".
+        var str strb.
         var str strc = concat[stra & strb]. 
         output [strc]. 
-
-	var int x = hex24.
-	var int rc = MaxNum[x & s].
-        output [rc]. 
-
-	check [rc > f]
-	{
-                output[x].
-	}
-	otherwise
-	{
-		output[strc].
-	}
 }

@@ -19,6 +19,7 @@ int _tmain(int argc, wchar_t* argv[])
 	setlocale(LC_ALL, "rus");
 	try
 	{
+		//TODO: автаматическая инициализация в генерации
 		Parm::PARM parm = Parm::getparm(argc, argv);
 		logfile = Log::getlog(parm.log);
 		In::IN in = In::getin(parm.in);
