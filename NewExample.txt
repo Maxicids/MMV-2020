@@ -53,3 +53,17 @@ head
 		output[strc].
 	}
 }
+
+
+function str concat[str a & str b]
+{
+        var str result = a + b.
+        return[result].
+}
+head
+{
+	var str stra = "just ".
+        var str strb = "string".
+        var str strc = concat[stra & strb]. 
+        output [strc]. 
+}

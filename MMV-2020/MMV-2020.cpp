@@ -41,8 +41,6 @@ int _tmain(int argc, wchar_t* argv[])
 		Log::WriteIDTableLog(table.idtable, logfile);
 		Log::WriteLexTableLog(table.lextable, logfile);
 
-		LT::WriteLexTable(table.lextable);
-
 		outfile = Log::getlog(parm.out);
 		CodeGeneration::Generation(table, outfile);
 

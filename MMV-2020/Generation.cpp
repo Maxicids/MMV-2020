@@ -174,7 +174,8 @@ namespace CodeGeneration
 			case LEX_EQUAL:
 			{
 				*(log.stream) << " = ";
-				if (table.idtable.table[table.lextable.table[i - 1].idxTI].iddatatype == IT::IDDATATYPE::INT)
+				if (table.idtable.table[table.lextable.table[i - 1].idxTI].iddatatype == IT::IDDATATYPE::INT
+					 && table.lextable.table[i + 2].lexema != LEX_POINT)
 				{
 					convert_flag = true;
 					*(log.stream) << "(byte)(";
