@@ -75,9 +75,14 @@ namespace CodeGeneration
 			{
 				if (table.lextable.table[i - 2].lexema == LEX_VAR && table.lextable.table[i + 1].lexema != LEX_EQUAL) 
 				{
-					if (table.idtable.table[table.lextable.table[i].idxTI].iddatatype == IT::IDDATATYPE::BOOL || table.idtable.table[table.lextable.table[i].idxTI].iddatatype == IT::IDDATATYPE::INT)
+					if (table.idtable.table[table.lextable.table[i].idxTI].iddatatype == IT::IDDATATYPE::INT)
 					{
 						*(log.stream) << table.idtable.table[table.lextable.table[i].idxTI].id << " = 0";
+						break;
+					}
+					else if (table.idtable.table[table.lextable.table[i].idxTI].iddatatype == IT::IDDATATYPE::BOOL)
+					{
+						*(log.stream) << table.idtable.table[table.lextable.table[i].idxTI].id << " = false";
 						break;
 					}
 					else
