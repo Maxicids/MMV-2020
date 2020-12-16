@@ -1,2 +1,2 @@
-# MMV-2020
-Compiler BGTU
+# MMV
+Компилятор на C#
